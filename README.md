@@ -1,2 +1,8 @@
 # job-nimbus-code-assessment
-assessment for interview with JobNimbus
+
+To run tests, just run:
+
+```
+npm i
+npm test
+```
