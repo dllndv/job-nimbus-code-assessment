@@ -1,0 +1,27 @@
+{
+  "name": "job-nimbus-code-assessment",
+  "version": "1.0.0",
+  "description": "Job Nimbus Code Assessment",
+  "main": "index.ts",
+  "scripts": {
+    "test": "mocha -r tsx 'tests/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dllndv/job-nimbus-code-assessment.git"
+  },
+  "author": "Dallen Loder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dllndv/job-nimbus-code-assessment/issues"
+  },
+  "homepage": "https://github.com/dllndv/job-nimbus-code-assessment#readme",
+  "devDependencies": {
+    "@types/chai": "^5.0.0",
+    "@types/mocha": "^10.0.8",
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}
