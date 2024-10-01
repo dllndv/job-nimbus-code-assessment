@@ -17,6 +17,9 @@ describe("brackets in strings", () => {
   it("should return false for <>>>", () => {
     expect(hasMatchingBrackets({ testString: "<>>>" })).to.be.false;
   });
+  it("should return false for <>><", () => {
+    expect(hasMatchingBrackets({ testString: "<>><" })).to.be.false;
+  });
   it('should return true for ""', () => {
     expect(hasMatchingBrackets({ testString: '""' })).to.be.true;
   });

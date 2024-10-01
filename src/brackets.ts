@@ -9,8 +9,12 @@ const hasMatchingBrackets = ({ testString }: hasMatchingBracketsParams) => {
   if (!justTheBrackets) {
     return true;
   }
-  // if there is an odd number of brackets, or the first bracket is a closing one, we know right away there's a missing match, no further work needed
-  if (justTheBrackets.length % 2 !== 0 || justTheBrackets[0] === ">") {
+  // if there is an odd number of brackets, or the first bracket is a closing one, or the last bracket is an opening one, we know right away there's a missing match, no further work needed
+  if (
+    justTheBrackets.length % 2 !== 0 ||
+    justTheBrackets[0] === ">" ||
+    justTheBrackets[justTheBrackets.length - 1] === "<"
+  ) {
     return false;
   }
   let numBracketSetsIncomplete = 0;
