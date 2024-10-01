@@ -18,7 +18,7 @@ const hasMatchingBrackets = ({ testString }: hasMatchingBracketsParams) => {
     return false;
   }
   let numBracketSetsIncomplete = 0;
-  justTheBrackets.map((bracket) => {
+  justTheBrackets.forEach((bracket) => {
     // each open bracket is an incomplete set, each closed bracket is a completed set
     bracket === "<" ? numBracketSetsIncomplete++ : numBracketSetsIncomplete--;
   });
